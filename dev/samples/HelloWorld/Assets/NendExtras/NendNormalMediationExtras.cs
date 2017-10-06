@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using GoogleMobileAds.Api.Mediation;
 
 namespace NendMediationExtras
 {
 	public class NendNormalMediationExtras : MediationExtras {
-		public const string interstitialTypeNormal = "interstitialTypeNormal";
+
+		private const string interstitialTypeNormal = "interstitialTypeNormal";
 		public const string interstitialTypeVideo = "interstitialTypeVideo";
 
 		public NendNormalMediationExtras()
@@ -18,11 +17,7 @@ namespace NendMediationExtras
 		{
 			set 
 			{ 
-				#if UNITY_IOS
-				this.Extras.Add("GADMNendInterstitialType", value);
-				#else
-				this.Extras.Add("key_interstitial_type", value);
-				#endif
+				this.Extras.Add("type", value);
 			}
 		}
 
@@ -30,11 +25,7 @@ namespace NendMediationExtras
 		{
 			set 
 			{ 
-				#if UNITY_IOS
 				this.Extras.Add("userId", value);
-				#else
-				this.Extras.Add("key_user_id", value);
-				#endif
 			}
 		}
 

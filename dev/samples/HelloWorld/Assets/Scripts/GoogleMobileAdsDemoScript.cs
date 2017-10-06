@@ -202,22 +202,22 @@ public class GoogleMobileAdsDemoScript : MonoBehaviour
 			.Build();
 	}
 
-	private AdRequest CreateCustomEventAdRequest()
-	{
-		NendCustomEventMediationExtras extra = new NendCustomEventMediationExtras ();
-		extra.UserId = "f@n-taro";
-
-		return new AdRequest.Builder ()
-			//.AddTestDevice(AdRequest.TestDeviceSimulator)
-			//.AddTestDevice("0123456789ABCDEF0123456789ABCDEF")
-			.AddKeyword ("game")
-			.SetGender (Gender.Male)
-			.SetBirthday (new DateTime (1985, 1, 1))
-			.TagForChildDirectedTreatment (false)
-			.AddExtra("color_bg", "9B30FF")
-			.AddMediationExtras(extra)
-			.Build();
-	}
+//	private AdRequest CreateCustomEventAdRequest()
+//	{
+//		NendCustomEventMediationExtras extra = new NendCustomEventMediationExtras ();
+//		extra.UserId = "f@n-taro";
+//
+//		return new AdRequest.Builder ()
+//			//.AddTestDevice(AdRequest.TestDeviceSimulator)
+//			//.AddTestDevice("0123456789ABCDEF0123456789ABCDEF")
+//			.AddKeyword ("game")
+//			.SetGender (Gender.Male)
+//			.SetBirthday (new DateTime (1985, 1, 1))
+//			.TagForChildDirectedTreatment (false)
+//			.AddExtra("color_bg", "9B30FF")
+//			.AddMediationExtras(extra)
+//			.Build();
+//	}
 
     private void RequestBanner()
     {
@@ -333,7 +333,7 @@ public class GoogleMobileAdsDemoScript : MonoBehaviour
         string adUnitId = "unexpected_platform";
 #endif
 
-		this.rewardBasedVideo.LoadAd(this.CreateCustomEventAdRequest(), adUnitId);
+//		this.rewardBasedVideo.LoadAd(this.CreateCustomEventAdRequest(), adUnitId);
     }
 
     private void ShowInterstitial()
