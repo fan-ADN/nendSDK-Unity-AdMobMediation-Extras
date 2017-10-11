@@ -12,7 +12,7 @@ UnityでAdMobメディエーションを利用して、nendの動画インター
 
 ## Supports
 
-* [document](https://github.com/fan-ADN/nendSDK-admob-mediation/wiki/Unity)
+* [document](https://github.com/fan-ADN/nendSDK-admob-mediation/wiki/Unity#-admobインタースティシャル広告でnendの動画インタースティシャル広告を表示する方法)
 
 ## License
 
