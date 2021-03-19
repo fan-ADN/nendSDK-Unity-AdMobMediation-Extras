@@ -10,6 +10,9 @@ import java.util.HashMap;
 @SuppressWarnings("unused")
 public class GADMUAdapterNendMediationExtras {
 
+    static final String KEY_INTERSTITIAL_TYPE = "key_interstitial_type";
+    static final String KEY_USER_ID = "key_user_id";
+
     public Bundle buildExtras(HashMap<String, String> extras) {
 
         Bundle bundle = new Bundle();
@@ -19,16 +22,16 @@ public class GADMUAdapterNendMediationExtras {
             return null;
         }
 
-        if (type.equals("interstitialTypeVideo")) {
-            bundle.putSerializable(NendAdapter.KEY_INTERSTITIAL_TYPE, NendAdapter.InterstitialType.TYPE_VIDEO);
+        if (type != null && type.equals("interstitialTypeVideo")) {
+            bundle.putSerializable(KEY_INTERSTITIAL_TYPE, NendAdapter.InterstitialType.TYPE_VIDEO);
 
             String userId = extras.get("userId");
             if (!TextUtils.isEmpty(userId)) {
-                bundle.putString(NendAdapter.KEY_USER_ID, userId);
+                bundle.putString(KEY_USER_ID, userId);
             }
 
         } else {
-            bundle.putSerializable(NendAdapter.KEY_INTERSTITIAL_TYPE, NendAdapter.InterstitialType.TYPE_NORMAL);
+            bundle.putSerializable(KEY_INTERSTITIAL_TYPE, NendAdapter.InterstitialType.TYPE_NORMAL);
         }
 
         return bundle;
