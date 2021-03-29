@@ -16,4 +16,4 @@ UnityでAdMobメディエーションを利用して、nendの動画インター
 
 ## License
 
-Copyright (C) F@N Communications, Inc.
+Copyright (C) FAN Communications, Inc.

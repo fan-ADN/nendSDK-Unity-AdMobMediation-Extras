@@ -1,7 +1,7 @@
 //
 //  GADMUAdapterNendMediationExtras.h
 //
-// Copyright © 2017年 F@N Communications, Inc. All rights reserved.
+// Copyright © 2017年 FAN Communications, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
